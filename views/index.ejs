@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= cv.name %> - CV</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/f15113764d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1><%= cv.name %></h1>
+            <p><%= cv.subtitle %></p>
+
+            <div class="image">
+                <img src="/<%= cv.image %>" alt="<%= cv.name %>">
+            </div>
+
+            <div class="contact">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> <%= cv.contact.location %></li>
+                    <li><i class="fa-solid fa-envelope"></i> <%= cv.contact.email %></li>
+                    <li><i class="fa-solid fa-phone"></i> <%= cv.contact.phone %></li>
+                    <li><i class="fa-brands fa-instagram"></i> <%= cv.contact.instagram %></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="education">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Haridus</h2>
+                <% cv.education.forEach(ed => { %>
+                    <h3><%= ed.institution %> (<%= ed.years %>)</h3>
+                    <ul>
+                        <% ed.details.forEach(detail => { %>
+                            <li><%= detail %></li>
+                        <% }) %>
+                    </ul>
+                <% }) %>
+            </section>
+
+            <section class="work">
+                <h2><i class="fa-solid fa-briefcase"></i> Töökogemus</h2>
+                <% cv.work.forEach(job => { %>
+                    <h3><%= job.position %> (<%= job.years %>)</h3>
+                    <ul>
+                        <% job.details.forEach(detail => { %>
+                            <li><%= detail %></li>
+                        <% }) %>
+                    </ul>
+                <% }) %>
+            </section>
+
+        </main>
+
+        <footer>
+            <h2><i class="fa-solid fa-star"></i> Lisakompetentsid ja oskused</h2>
+            <ul>
+                <% cv.skills.forEach(skill => { %>
+                    <li><%= skill %></li>
+                <% }) %>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

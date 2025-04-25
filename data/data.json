@@ -1,0 +1,58 @@
+{
+    "name": "Peeter Paan",
+    "subtitle": "95-AASTANE IGAVESTI NOOR",
+    "image": "images/peeter.png",
+    "contact": {
+        "location": "Teise Tähe parempoolne nurk",
+        "email": "peeter@ei-kasva.kunagi.ee",
+        "phone": "+372 5555 6666",
+        "instagram": "/peeterpaan_official"
+    },
+    "education": [
+        {
+            "institution": "Võlukunsti Akadeemia, Mitte-Midagi Maailm",
+            "years": "1940–1945",
+            "details": [
+                "Lendamise magistrikraad",
+                "Lõputöö: Kuidas mitte kunagi suureks kasvada",
+                "Juhatas salajast gildi nimega \"Kadunud Poisid\""
+            ]
+        },
+        {
+            "institution": "Ajamasina Tehnikakõrgkool, Aegade Algus",
+            "years": "1930–1935",
+            "details": [
+                "Tagurpidi vananemise doktorikraad (PhD)",
+                "Praktika läbi viidud tulevikus"
+            ]
+        }
+    ],
+    "work": [
+        {
+            "position": "Täiskohaga Unistuste Seikleja",
+            "years": "1935–Tänaseni",
+            "details": [
+                "Enda boss – kunagi ei tööta päeva päriselt",
+                "Igapäevane lendlemine ja probleemide vältimine",
+                "Konfliktide lahendamine krokodillide ja kapten Konksuga",
+                "Tugev võime: ei kasuta äratuskella"
+            ]
+        },
+        {
+            "position": "Ajutine tööpäkapikk, Jõuluvana Korporatsioon",
+            "years": "1947–1949",
+            "details": [
+                "Katkinee mänguasjade joonistaja",
+                "Visiitidega läbi korstnate",
+                "Vallandati, kuna tõi kõigile lapstele mõõgad"
+            ]
+        }
+    ],
+    "skills": [
+        "Ei kasva kunagi suureks",
+        "Lendab ilma kütuseta",
+        "Mängib flööti ilma flöödita",
+        "Karisma: 100/100",
+        "Mälestuste haldamine sajandi jagu"
+    ]
+}

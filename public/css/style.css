@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --primary-color: #333333;
+    --heading-fonts: "Playfair", serif;
+    --body-fonts: "Aldrich", sans-serif;
+    --link-fonts: "Quicksand", sans-serif;
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-fonts);
+    color: var(--primary-color);
+}
+
+.container{
+    width: 40%;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 2rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(6, auto);
+}
+
+header h1{
+    font-family: var(--heading-fonts);
+    font-size: 3rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-right: 5rem;
+    text-align: left;
+}
+
+header p{
+    font-family: var(--body-fonts);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.image{
+    grid-column: 1/2;
+    grid-row: 1/7;
+}
+
+.image img{
+    width: 200px;
+    height: 200px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.contact{
+    grid-column: 2/3;
+    grid-row: 3/7;
+}
+.contact li{
+    font-family: var(--body-fonts);
+    list-style: none;
+}
+
+.contact li:nth-child(1) i {
+    color: #ff2828;
+
+}
+
+.contact li:nth-child(2) i {
+    color: #1b07f7;
+
+}
+
+.contact li:nth-child(3) i {
+    color: #089b00;
+
+}
+
+.contact li:nth-child(4) i {
+    color: #006ec2;
+}
+
+h2{
+    font-family: var(--heading-fonts);
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+h3{
+    font-family: var(--heading-fonts);
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.education h2 i {
+    color: #7b7a7a;
+}
+
+.education li{
+    list-style-type:square;
+}
+
+.work h2 i {
+    color: #370000;
+}
+
+.work li{
+    list-style-type:circle;
+}
+
+footer h2 i {
+    color: #e5ff00;
+}
+
+footer li {
+    list-style-type: disc;
+}
+
+footer{
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .image img{
+        width: 125px;
+        height: 125px;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .contact li{
+        font-size: 0.8rem;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+}
